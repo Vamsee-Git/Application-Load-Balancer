@@ -1,4 +1,4 @@
-name: ALB deployment
+name: ALB deployment.
 
 on:
   workflow_dispatch:
