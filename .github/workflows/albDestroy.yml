@@ -40,7 +40,5 @@ jobs:
  
       # Step 5: Terraform Destroy
       - name: Terraform Destroy
-        run: |
-          terraform plan -destroy -out=tf_destroy_plan.tfplan
-          terraform apply -auto-approve -lock=false tf_destroy_plan.tfplan
+        run: terraform destroy -auto-approve -lock=false tf_destroy_plan.tfplan
 
